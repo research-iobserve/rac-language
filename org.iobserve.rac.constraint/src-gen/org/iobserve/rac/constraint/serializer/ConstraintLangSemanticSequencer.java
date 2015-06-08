@@ -30,6 +30,7 @@ import org.iobserve.rac.constraint.constraintLang.RecordTypeSelection;
 import org.iobserve.rac.constraint.constraintLang.SelectConstaintExpression;
 import org.iobserve.rac.constraint.constraintLang.SelectInput;
 import org.iobserve.rac.constraint.constraintLang.Selection;
+import org.iobserve.rac.constraint.constraintLang.SourceReference;
 import org.iobserve.rac.constraint.constraintLang.StringLiteral;
 import org.iobserve.rac.constraint.constraintLang.TemplateTypeSelection;
 import org.iobserve.rac.constraint.services.ConstraintLangGrammarAccess;
@@ -192,6 +193,12 @@ public class ConstraintLangSemanticSequencer extends AbstractDelegatingSemanticS
 					return; 
 				}
 				else break;
+			case ConstraintLangPackage.SOURCE_REFERENCE:
+				if(context == grammarAccess.getSourceReferenceRule()) {
+					sequence_SourceReference(context, (SourceReference) semanticObject); 
+					return; 
+				}
+				else break;
 			case ConstraintLangPackage.STRING_LITERAL:
 				if(context == grammarAccess.getCompareOperandRule() ||
 				   context == grammarAccess.getLiteralRule() ||
@@ -345,19 +352,22 @@ public class ConstraintLangSemanticSequencer extends AbstractDelegatingSemanticS
 	
 	/**
 	 * Constraint:
-	 *     (name=ID constraint=ConstraintExpression)
+	 *     (name=ID sourceReference=SourceReference constraint=ConstraintExpression)
 	 */
 	protected void sequence_Filter(EObject context, Filter semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, ConstraintLangPackage.Literals.FILTER__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ConstraintLangPackage.Literals.FILTER__NAME));
+			if(transientValues.isValueTransient(semanticObject, ConstraintLangPackage.Literals.OPERATION__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ConstraintLangPackage.Literals.OPERATION__NAME));
+			if(transientValues.isValueTransient(semanticObject, ConstraintLangPackage.Literals.OPERATION__SOURCE_REFERENCE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ConstraintLangPackage.Literals.OPERATION__SOURCE_REFERENCE));
 			if(transientValues.isValueTransient(semanticObject, ConstraintLangPackage.Literals.FILTER__CONSTRAINT) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ConstraintLangPackage.Literals.FILTER__CONSTRAINT));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getFilterAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getFilterAccess().getConstraintConstraintExpressionParserRuleCall_2_0(), semanticObject.getConstraint());
+		feeder.accept(grammarAccess.getFilterAccess().getSourceReferenceSourceReferenceParserRuleCall_2_0(), semanticObject.getSourceReference());
+		feeder.accept(grammarAccess.getFilterAccess().getConstraintConstraintExpressionParserRuleCall_3_0(), semanticObject.getConstraint());
 		feeder.finish();
 	}
 	
@@ -504,15 +514,25 @@ public class ConstraintLangSemanticSequencer extends AbstractDelegatingSemanticS
 	/**
 	 * Constraint:
 	 *     (
+	 *         name=ID 
+	 *         sourceReference=SourceReference 
 	 *         inputs+=SelectInput 
 	 *         inputs+=SelectInput* 
-	 *         filter=[Filter|ID] 
 	 *         recordType=[RecordType|ID] 
 	 *         paremterExpressions+=ParameterExpression 
 	 *         paremterExpressions+=ParameterExpression*
 	 *     )
 	 */
 	protected void sequence_Selection(EObject context, Selection semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (filter=[Operation|ID] | default?='default')
+	 */
+	protected void sequence_SourceReference(EObject context, SourceReference semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

@@ -24,8 +24,8 @@ Operation:
 // ---------------------
 // selection
 Selection:
-	'select' inputs+=SelectInput (',' inputs+=SelectInput)*
-	'from' filter=[Filter|ID]
+	'select' name=ID sourceReference=SourceReference 
+	':' inputs+=SelectInput (',' inputs+=SelectInput)*
 	'store' recordType=[record::RecordType|ID] 
 	'(' paremterExpressions+=ParameterExpression (',' paremterExpressions+=ParameterExpression)*  ')'
 ;
@@ -61,7 +61,7 @@ ParameterExpression:
 
 // ------------------------
 // filter
-Filter: 'filter' name=ID constraint=ConstraintExpression ;
+Filter: 'filter' name=ID sourceReference=SourceReference constraint=ConstraintExpression;
 
 ConstraintExpression:
 	BasicConstraint (=>({ConstraintExpression.left=current} operator=LogicOperator) right=PropertyConstraint)?
@@ -116,6 +116,11 @@ enum RecordTypeModifier:
 	SUPER = 'super' |
 	EXTENDS = 'extends'
 ;
+
+// -----------------------------------
+// Common rules
+SourceReference: 'from' (filter=[Operation|ID] | default?='default');
+// TODO we might replace default by a distinct selection of different inputs
 
 // -----------------------------------
 // Literal

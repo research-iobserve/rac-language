@@ -43,6 +43,7 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getBasicConstraintAccess().getAlternatives(), "rule__BasicConstraint__Alternatives");
 					put(grammarAccess.getBasicPropertyConstraintAccess().getAlternatives(), "rule__BasicPropertyConstraint__Alternatives");
 					put(grammarAccess.getTypeSelectionAccess().getAlternatives(), "rule__TypeSelection__Alternatives");
+					put(grammarAccess.getSourceReferenceAccess().getAlternatives_1(), "rule__SourceReference__Alternatives_1");
 					put(grammarAccess.getLiteralAccess().getAlternatives(), "rule__Literal__Alternatives");
 					put(grammarAccess.getRecordTypeModifierAccess().getAlternatives(), "rule__RecordTypeModifier__Alternatives");
 					put(grammarAccess.getLogicOperatorAccess().getAlternatives(), "rule__LogicOperator__Alternatives");
@@ -50,8 +51,8 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getModelAccess().getGroup(), "rule__Model__Group__0");
 					put(grammarAccess.getImportAccess().getGroup(), "rule__Import__Group__0");
 					put(grammarAccess.getSelectionAccess().getGroup(), "rule__Selection__Group__0");
-					put(grammarAccess.getSelectionAccess().getGroup_2(), "rule__Selection__Group_2__0");
-					put(grammarAccess.getSelectionAccess().getGroup_9(), "rule__Selection__Group_9__0");
+					put(grammarAccess.getSelectionAccess().getGroup_5(), "rule__Selection__Group_5__0");
+					put(grammarAccess.getSelectionAccess().getGroup_10(), "rule__Selection__Group_10__0");
 					put(grammarAccess.getSelectInputAccess().getGroup(), "rule__SelectInput__Group__0");
 					put(grammarAccess.getSelectInputAccess().getGroup_2(), "rule__SelectInput__Group_2__0");
 					put(grammarAccess.getSelectConstaintExpressionAccess().getGroup(), "rule__SelectConstaintExpression__Group__0");
@@ -78,6 +79,7 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTemplateTypeSelectionAccess().getGroup(), "rule__TemplateTypeSelection__Group__0");
 					put(grammarAccess.getTemplateTypeSelectionAccess().getGroup_3(), "rule__TemplateTypeSelection__Group_3__0");
 					put(grammarAccess.getRecordTypeSelectionAccess().getGroup(), "rule__RecordTypeSelection__Group__0");
+					put(grammarAccess.getSourceReferenceAccess().getGroup(), "rule__SourceReference__Group__0");
 					put(grammarAccess.getArrayLiteralAccess().getGroup(), "rule__ArrayLiteral__Group__0");
 					put(grammarAccess.getArrayLiteralAccess().getGroup_2(), "rule__ArrayLiteral__Group_2__0");
 					put(grammarAccess.getBuiltInValueLiteralAccess().getGroup(), "rule__BuiltInValueLiteral__Group__0");
@@ -89,12 +91,13 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getModelAccess().getImportsAssignment_2(), "rule__Model__ImportsAssignment_2");
 					put(grammarAccess.getModelAccess().getOperationsAssignment_3(), "rule__Model__OperationsAssignment_3");
 					put(grammarAccess.getImportAccess().getImportedNamespaceAssignment_1(), "rule__Import__ImportedNamespaceAssignment_1");
-					put(grammarAccess.getSelectionAccess().getInputsAssignment_1(), "rule__Selection__InputsAssignment_1");
-					put(grammarAccess.getSelectionAccess().getInputsAssignment_2_1(), "rule__Selection__InputsAssignment_2_1");
-					put(grammarAccess.getSelectionAccess().getFilterAssignment_4(), "rule__Selection__FilterAssignment_4");
-					put(grammarAccess.getSelectionAccess().getRecordTypeAssignment_6(), "rule__Selection__RecordTypeAssignment_6");
-					put(grammarAccess.getSelectionAccess().getParemterExpressionsAssignment_8(), "rule__Selection__ParemterExpressionsAssignment_8");
-					put(grammarAccess.getSelectionAccess().getParemterExpressionsAssignment_9_1(), "rule__Selection__ParemterExpressionsAssignment_9_1");
+					put(grammarAccess.getSelectionAccess().getNameAssignment_1(), "rule__Selection__NameAssignment_1");
+					put(grammarAccess.getSelectionAccess().getSourceReferenceAssignment_2(), "rule__Selection__SourceReferenceAssignment_2");
+					put(grammarAccess.getSelectionAccess().getInputsAssignment_4(), "rule__Selection__InputsAssignment_4");
+					put(grammarAccess.getSelectionAccess().getInputsAssignment_5_1(), "rule__Selection__InputsAssignment_5_1");
+					put(grammarAccess.getSelectionAccess().getRecordTypeAssignment_7(), "rule__Selection__RecordTypeAssignment_7");
+					put(grammarAccess.getSelectionAccess().getParemterExpressionsAssignment_9(), "rule__Selection__ParemterExpressionsAssignment_9");
+					put(grammarAccess.getSelectionAccess().getParemterExpressionsAssignment_10_1(), "rule__Selection__ParemterExpressionsAssignment_10_1");
 					put(grammarAccess.getSelectInputAccess().getRecordTypeAssignment_0(), "rule__SelectInput__RecordTypeAssignment_0");
 					put(grammarAccess.getSelectInputAccess().getNameAssignment_1(), "rule__SelectInput__NameAssignment_1");
 					put(grammarAccess.getSelectInputAccess().getSelectConstraintAssignment_2_1(), "rule__SelectInput__SelectConstraintAssignment_2_1");
@@ -107,7 +110,8 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getParameterExpressionAccess().getInputAssignment_0_0(), "rule__ParameterExpression__InputAssignment_0_0");
 					put(grammarAccess.getParameterExpressionAccess().getPropertyReferenceAssignment_1(), "rule__ParameterExpression__PropertyReferenceAssignment_1");
 					put(grammarAccess.getFilterAccess().getNameAssignment_1(), "rule__Filter__NameAssignment_1");
-					put(grammarAccess.getFilterAccess().getConstraintAssignment_2(), "rule__Filter__ConstraintAssignment_2");
+					put(grammarAccess.getFilterAccess().getSourceReferenceAssignment_2(), "rule__Filter__SourceReferenceAssignment_2");
+					put(grammarAccess.getFilterAccess().getConstraintAssignment_3(), "rule__Filter__ConstraintAssignment_3");
 					put(grammarAccess.getConstraintExpressionAccess().getOperatorAssignment_1_0_0_1(), "rule__ConstraintExpression__OperatorAssignment_1_0_0_1");
 					put(grammarAccess.getConstraintExpressionAccess().getRightAssignment_1_1(), "rule__ConstraintExpression__RightAssignment_1_1");
 					put(grammarAccess.getParenthesisConstraintAccess().getConstraintAssignment_1(), "rule__ParenthesisConstraint__ConstraintAssignment_1");
@@ -124,6 +128,8 @@ public class ConstraintLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTemplateTypeSelectionAccess().getTypesAssignment_3_1(), "rule__TemplateTypeSelection__TypesAssignment_3_1");
 					put(grammarAccess.getRecordTypeSelectionAccess().getModifierAssignment_1(), "rule__RecordTypeSelection__ModifierAssignment_1");
 					put(grammarAccess.getRecordTypeSelectionAccess().getTypeAssignment_2(), "rule__RecordTypeSelection__TypeAssignment_2");
+					put(grammarAccess.getSourceReferenceAccess().getFilterAssignment_1_0(), "rule__SourceReference__FilterAssignment_1_0");
+					put(grammarAccess.getSourceReferenceAccess().getDefaultAssignment_1_1(), "rule__SourceReference__DefaultAssignment_1_1");
 					put(grammarAccess.getArrayLiteralAccess().getLiteralsAssignment_1(), "rule__ArrayLiteral__LiteralsAssignment_1");
 					put(grammarAccess.getArrayLiteralAccess().getLiteralsAssignment_2_1(), "rule__ArrayLiteral__LiteralsAssignment_2_1");
 					put(grammarAccess.getStringLiteralAccess().getValueAssignment(), "rule__StringLiteral__ValueAssignment");

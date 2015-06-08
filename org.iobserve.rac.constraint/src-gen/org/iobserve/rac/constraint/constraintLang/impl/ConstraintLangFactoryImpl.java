@@ -80,6 +80,7 @@ public class ConstraintLangFactoryImpl extends EFactoryImpl implements Constrain
       case ConstraintLangPackage.CONCRETE_TYPE: return createConcreteType();
       case ConstraintLangPackage.TEMPLATE_TYPE_SELECTION: return createTemplateTypeSelection();
       case ConstraintLangPackage.RECORD_TYPE_SELECTION: return createRecordTypeSelection();
+      case ConstraintLangPackage.SOURCE_REFERENCE: return createSourceReference();
       case ConstraintLangPackage.LITERAL: return createLiteral();
       case ConstraintLangPackage.ARRAY_LITERAL: return createArrayLiteral();
       case ConstraintLangPackage.STRING_LITERAL: return createStringLiteral();
@@ -297,6 +298,17 @@ public class ConstraintLangFactoryImpl extends EFactoryImpl implements Constrain
   {
     RecordTypeSelectionImpl recordTypeSelection = new RecordTypeSelectionImpl();
     return recordTypeSelection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SourceReference createSourceReference()
+  {
+    SourceReferenceImpl sourceReference = new SourceReferenceImpl();
+    return sourceReference;
   }
 
   /**

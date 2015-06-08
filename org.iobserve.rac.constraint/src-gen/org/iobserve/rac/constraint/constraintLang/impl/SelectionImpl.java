@@ -20,7 +20,6 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.iobserve.rac.constraint.constraintLang.ConstraintLangPackage;
-import org.iobserve.rac.constraint.constraintLang.Filter;
 import org.iobserve.rac.constraint.constraintLang.ParameterExpression;
 import org.iobserve.rac.constraint.constraintLang.SelectInput;
 import org.iobserve.rac.constraint.constraintLang.Selection;
@@ -33,7 +32,6 @@ import org.iobserve.rac.constraint.constraintLang.Selection;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl#getInputs <em>Inputs</em>}</li>
- *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl#getFilter <em>Filter</em>}</li>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl#getRecordType <em>Record Type</em>}</li>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl#getParemterExpressions <em>Paremter Expressions</em>}</li>
  * </ul>
@@ -52,16 +50,6 @@ public class SelectionImpl extends OperationImpl implements Selection
    * @ordered
    */
   protected EList<SelectInput> inputs;
-
-  /**
-   * The cached value of the '{@link #getFilter() <em>Filter</em>}' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getFilter()
-   * @generated
-   * @ordered
-   */
-  protected Filter filter;
 
   /**
    * The cached value of the '{@link #getRecordType() <em>Record Type</em>}' reference.
@@ -116,49 +104,6 @@ public class SelectionImpl extends OperationImpl implements Selection
       inputs = new EObjectContainmentEList<SelectInput>(SelectInput.class, this, ConstraintLangPackage.SELECTION__INPUTS);
     }
     return inputs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Filter getFilter()
-  {
-    if (filter != null && filter.eIsProxy())
-    {
-      InternalEObject oldFilter = (InternalEObject)filter;
-      filter = (Filter)eResolveProxy(oldFilter);
-      if (filter != oldFilter)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, ConstraintLangPackage.SELECTION__FILTER, oldFilter, filter));
-      }
-    }
-    return filter;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Filter basicGetFilter()
-  {
-    return filter;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setFilter(Filter newFilter)
-  {
-    Filter oldFilter = filter;
-    filter = newFilter;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ConstraintLangPackage.SELECTION__FILTER, oldFilter, filter));
   }
 
   /**
@@ -248,9 +193,6 @@ public class SelectionImpl extends OperationImpl implements Selection
     {
       case ConstraintLangPackage.SELECTION__INPUTS:
         return getInputs();
-      case ConstraintLangPackage.SELECTION__FILTER:
-        if (resolve) return getFilter();
-        return basicGetFilter();
       case ConstraintLangPackage.SELECTION__RECORD_TYPE:
         if (resolve) return getRecordType();
         return basicGetRecordType();
@@ -274,9 +216,6 @@ public class SelectionImpl extends OperationImpl implements Selection
       case ConstraintLangPackage.SELECTION__INPUTS:
         getInputs().clear();
         getInputs().addAll((Collection<? extends SelectInput>)newValue);
-        return;
-      case ConstraintLangPackage.SELECTION__FILTER:
-        setFilter((Filter)newValue);
         return;
       case ConstraintLangPackage.SELECTION__RECORD_TYPE:
         setRecordType((RecordType)newValue);
@@ -302,9 +241,6 @@ public class SelectionImpl extends OperationImpl implements Selection
       case ConstraintLangPackage.SELECTION__INPUTS:
         getInputs().clear();
         return;
-      case ConstraintLangPackage.SELECTION__FILTER:
-        setFilter((Filter)null);
-        return;
       case ConstraintLangPackage.SELECTION__RECORD_TYPE:
         setRecordType((RecordType)null);
         return;
@@ -327,8 +263,6 @@ public class SelectionImpl extends OperationImpl implements Selection
     {
       case ConstraintLangPackage.SELECTION__INPUTS:
         return inputs != null && !inputs.isEmpty();
-      case ConstraintLangPackage.SELECTION__FILTER:
-        return filter != null;
       case ConstraintLangPackage.SELECTION__RECORD_TYPE:
         return recordType != null;
       case ConstraintLangPackage.SELECTION__PAREMTER_EXPRESSIONS:

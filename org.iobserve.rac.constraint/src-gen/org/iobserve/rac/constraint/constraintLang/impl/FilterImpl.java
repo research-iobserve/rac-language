@@ -21,7 +21,6 @@ import org.iobserve.rac.constraint.constraintLang.Filter;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.FilterImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.impl.FilterImpl#getConstraint <em>Constraint</em>}</li>
  * </ul>
  * </p>
@@ -30,26 +29,6 @@ import org.iobserve.rac.constraint.constraintLang.Filter;
  */
 public class FilterImpl extends OperationImpl implements Filter
 {
-  /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
-
   /**
    * The cached value of the '{@link #getConstraint() <em>Constraint</em>}' containment reference.
    * <!-- begin-user-doc -->
@@ -79,29 +58,6 @@ public class FilterImpl extends OperationImpl implements Filter
   protected EClass eStaticClass()
   {
     return ConstraintLangPackage.Literals.FILTER;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getName()
-  {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ConstraintLangPackage.FILTER__NAME, oldName, name));
   }
 
   /**
@@ -178,8 +134,6 @@ public class FilterImpl extends OperationImpl implements Filter
   {
     switch (featureID)
     {
-      case ConstraintLangPackage.FILTER__NAME:
-        return getName();
       case ConstraintLangPackage.FILTER__CONSTRAINT:
         return getConstraint();
     }
@@ -196,9 +150,6 @@ public class FilterImpl extends OperationImpl implements Filter
   {
     switch (featureID)
     {
-      case ConstraintLangPackage.FILTER__NAME:
-        setName((String)newValue);
-        return;
       case ConstraintLangPackage.FILTER__CONSTRAINT:
         setConstraint((ConstraintExpression)newValue);
         return;
@@ -216,9 +167,6 @@ public class FilterImpl extends OperationImpl implements Filter
   {
     switch (featureID)
     {
-      case ConstraintLangPackage.FILTER__NAME:
-        setName(NAME_EDEFAULT);
-        return;
       case ConstraintLangPackage.FILTER__CONSTRAINT:
         setConstraint((ConstraintExpression)null);
         return;
@@ -236,29 +184,10 @@ public class FilterImpl extends OperationImpl implements Filter
   {
     switch (featureID)
     {
-      case ConstraintLangPackage.FILTER__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case ConstraintLangPackage.FILTER__CONSTRAINT:
         return constraint != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(')');
-    return result.toString();
   }
 
 } //FilterImpl

@@ -142,13 +142,31 @@ public interface ConstraintLangPackage extends EPackage
   int OPERATION = 2;
 
   /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Source Reference</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__SOURCE_REFERENCE = 1;
+
+  /**
    * The number of structural features of the '<em>Operation</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OPERATION_FEATURE_COUNT = 0;
+  int OPERATION_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl <em>Selection</em>}' class.
@@ -161,6 +179,24 @@ public interface ConstraintLangPackage extends EPackage
   int SELECTION = 3;
 
   /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SELECTION__NAME = OPERATION__NAME;
+
+  /**
+   * The feature id for the '<em><b>Source Reference</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SELECTION__SOURCE_REFERENCE = OPERATION__SOURCE_REFERENCE;
+
+  /**
    * The feature id for the '<em><b>Inputs</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -170,22 +206,13 @@ public interface ConstraintLangPackage extends EPackage
   int SELECTION__INPUTS = OPERATION_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Filter</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int SELECTION__FILTER = OPERATION_FEATURE_COUNT + 1;
-
-  /**
    * The feature id for the '<em><b>Record Type</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SELECTION__RECORD_TYPE = OPERATION_FEATURE_COUNT + 2;
+  int SELECTION__RECORD_TYPE = OPERATION_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Paremter Expressions</b></em>' containment reference list.
@@ -194,7 +221,7 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SELECTION__PAREMTER_EXPRESSIONS = OPERATION_FEATURE_COUNT + 3;
+  int SELECTION__PAREMTER_EXPRESSIONS = OPERATION_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Selection</em>' class.
@@ -203,7 +230,7 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SELECTION_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 4;
+  int SELECTION_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.impl.SelectInputImpl <em>Select Input</em>}' class.
@@ -388,7 +415,16 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER__NAME = OPERATION_FEATURE_COUNT + 0;
+  int FILTER__NAME = OPERATION__NAME;
+
+  /**
+   * The feature id for the '<em><b>Source Reference</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FILTER__SOURCE_REFERENCE = OPERATION__SOURCE_REFERENCE;
 
   /**
    * The feature id for the '<em><b>Constraint</b></em>' containment reference.
@@ -397,7 +433,7 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER__CONSTRAINT = OPERATION_FEATURE_COUNT + 1;
+  int FILTER__CONSTRAINT = OPERATION_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Filter</em>' class.
@@ -406,7 +442,7 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 2;
+  int FILTER_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.impl.ConstraintExpressionImpl <em>Constraint Expression</em>}' class.
@@ -676,6 +712,43 @@ public interface ConstraintLangPackage extends EPackage
   int RECORD_TYPE_SELECTION_FEATURE_COUNT = TYPE_SELECTION_FEATURE_COUNT + 2;
 
   /**
+   * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.impl.SourceReferenceImpl <em>Source Reference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.iobserve.rac.constraint.constraintLang.impl.SourceReferenceImpl
+   * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getSourceReference()
+   * @generated
+   */
+  int SOURCE_REFERENCE = 15;
+
+  /**
+   * The feature id for the '<em><b>Filter</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOURCE_REFERENCE__FILTER = 0;
+
+  /**
+   * The feature id for the '<em><b>Default</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOURCE_REFERENCE__DEFAULT = 1;
+
+  /**
+   * The number of structural features of the '<em>Source Reference</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOURCE_REFERENCE_FEATURE_COUNT = 2;
+
+  /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.impl.LiteralImpl <em>Literal</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -683,7 +756,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getLiteral()
    * @generated
    */
-  int LITERAL = 15;
+  int LITERAL = 16;
 
   /**
    * The number of structural features of the '<em>Literal</em>' class.
@@ -702,7 +775,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getArrayLiteral()
    * @generated
    */
-  int ARRAY_LITERAL = 16;
+  int ARRAY_LITERAL = 17;
 
   /**
    * The feature id for the '<em><b>Literals</b></em>' containment reference list.
@@ -730,7 +803,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getStringLiteral()
    * @generated
    */
-  int STRING_LITERAL = 17;
+  int STRING_LITERAL = 18;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -758,7 +831,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getIntLiteral()
    * @generated
    */
-  int INT_LITERAL = 18;
+  int INT_LITERAL = 19;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -786,7 +859,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getFloatLiteral()
    * @generated
    */
-  int FLOAT_LITERAL = 19;
+  int FLOAT_LITERAL = 20;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -814,7 +887,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getBooleanLiteral()
    * @generated
    */
-  int BOOLEAN_LITERAL = 20;
+  int BOOLEAN_LITERAL = 21;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -842,7 +915,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getBuiltInValueLiteral()
    * @generated
    */
-  int BUILT_IN_VALUE_LITERAL = 21;
+  int BUILT_IN_VALUE_LITERAL = 22;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -870,7 +943,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getRecordTypeModifier()
    * @generated
    */
-  int RECORD_TYPE_MODIFIER = 22;
+  int RECORD_TYPE_MODIFIER = 23;
 
   /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.LogicOperator <em>Logic Operator</em>}' enum.
@@ -880,7 +953,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getLogicOperator()
    * @generated
    */
-  int LOGIC_OPERATOR = 23;
+  int LOGIC_OPERATOR = 24;
 
   /**
    * The meta object id for the '{@link org.iobserve.rac.constraint.constraintLang.Comparator <em>Comparator</em>}' enum.
@@ -890,7 +963,7 @@ public interface ConstraintLangPackage extends EPackage
    * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getComparator()
    * @generated
    */
-  int COMPARATOR = 24;
+  int COMPARATOR = 25;
 
 
   /**
@@ -968,6 +1041,28 @@ public interface ConstraintLangPackage extends EPackage
   EClass getOperation();
 
   /**
+   * Returns the meta object for the attribute '{@link org.iobserve.rac.constraint.constraintLang.Operation#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see org.iobserve.rac.constraint.constraintLang.Operation#getName()
+   * @see #getOperation()
+   * @generated
+   */
+  EAttribute getOperation_Name();
+
+  /**
+   * Returns the meta object for the containment reference '{@link org.iobserve.rac.constraint.constraintLang.Operation#getSourceReference <em>Source Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Source Reference</em>'.
+   * @see org.iobserve.rac.constraint.constraintLang.Operation#getSourceReference()
+   * @see #getOperation()
+   * @generated
+   */
+  EReference getOperation_SourceReference();
+
+  /**
    * Returns the meta object for class '{@link org.iobserve.rac.constraint.constraintLang.Selection <em>Selection</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -987,17 +1082,6 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    */
   EReference getSelection_Inputs();
-
-  /**
-   * Returns the meta object for the reference '{@link org.iobserve.rac.constraint.constraintLang.Selection#getFilter <em>Filter</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Filter</em>'.
-   * @see org.iobserve.rac.constraint.constraintLang.Selection#getFilter()
-   * @see #getSelection()
-   * @generated
-   */
-  EReference getSelection_Filter();
 
   /**
    * Returns the meta object for the reference '{@link org.iobserve.rac.constraint.constraintLang.Selection#getRecordType <em>Record Type</em>}'.
@@ -1180,17 +1264,6 @@ public interface ConstraintLangPackage extends EPackage
    * @generated
    */
   EClass getFilter();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.iobserve.rac.constraint.constraintLang.Filter#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see org.iobserve.rac.constraint.constraintLang.Filter#getName()
-   * @see #getFilter()
-   * @generated
-   */
-  EAttribute getFilter_Name();
 
   /**
    * Returns the meta object for the containment reference '{@link org.iobserve.rac.constraint.constraintLang.Filter#getConstraint <em>Constraint</em>}'.
@@ -1451,6 +1524,38 @@ public interface ConstraintLangPackage extends EPackage
   EReference getRecordTypeSelection_Type();
 
   /**
+   * Returns the meta object for class '{@link org.iobserve.rac.constraint.constraintLang.SourceReference <em>Source Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Source Reference</em>'.
+   * @see org.iobserve.rac.constraint.constraintLang.SourceReference
+   * @generated
+   */
+  EClass getSourceReference();
+
+  /**
+   * Returns the meta object for the reference '{@link org.iobserve.rac.constraint.constraintLang.SourceReference#getFilter <em>Filter</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Filter</em>'.
+   * @see org.iobserve.rac.constraint.constraintLang.SourceReference#getFilter()
+   * @see #getSourceReference()
+   * @generated
+   */
+  EReference getSourceReference_Filter();
+
+  /**
+   * Returns the meta object for the attribute '{@link org.iobserve.rac.constraint.constraintLang.SourceReference#isDefault <em>Default</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Default</em>'.
+   * @see org.iobserve.rac.constraint.constraintLang.SourceReference#isDefault()
+   * @see #getSourceReference()
+   * @generated
+   */
+  EAttribute getSourceReference_Default();
+
+  /**
    * Returns the meta object for class '{@link org.iobserve.rac.constraint.constraintLang.Literal <em>Literal</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1702,6 +1807,22 @@ public interface ConstraintLangPackage extends EPackage
     EClass OPERATION = eINSTANCE.getOperation();
 
     /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute OPERATION__NAME = eINSTANCE.getOperation_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Source Reference</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference OPERATION__SOURCE_REFERENCE = eINSTANCE.getOperation_SourceReference();
+
+    /**
      * The meta object literal for the '{@link org.iobserve.rac.constraint.constraintLang.impl.SelectionImpl <em>Selection</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1718,14 +1839,6 @@ public interface ConstraintLangPackage extends EPackage
      * @generated
      */
     EReference SELECTION__INPUTS = eINSTANCE.getSelection_Inputs();
-
-    /**
-     * The meta object literal for the '<em><b>Filter</b></em>' reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference SELECTION__FILTER = eINSTANCE.getSelection_Filter();
 
     /**
      * The meta object literal for the '<em><b>Record Type</b></em>' reference feature.
@@ -1872,14 +1985,6 @@ public interface ConstraintLangPackage extends EPackage
      * @generated
      */
     EClass FILTER = eINSTANCE.getFilter();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute FILTER__NAME = eINSTANCE.getFilter_Name();
 
     /**
      * The meta object literal for the '<em><b>Constraint</b></em>' containment reference feature.
@@ -2084,6 +2189,32 @@ public interface ConstraintLangPackage extends EPackage
      * @generated
      */
     EReference RECORD_TYPE_SELECTION__TYPE = eINSTANCE.getRecordTypeSelection_Type();
+
+    /**
+     * The meta object literal for the '{@link org.iobserve.rac.constraint.constraintLang.impl.SourceReferenceImpl <em>Source Reference</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.iobserve.rac.constraint.constraintLang.impl.SourceReferenceImpl
+     * @see org.iobserve.rac.constraint.constraintLang.impl.ConstraintLangPackageImpl#getSourceReference()
+     * @generated
+     */
+    EClass SOURCE_REFERENCE = eINSTANCE.getSourceReference();
+
+    /**
+     * The meta object literal for the '<em><b>Filter</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SOURCE_REFERENCE__FILTER = eINSTANCE.getSourceReference_Filter();
+
+    /**
+     * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SOURCE_REFERENCE__DEFAULT = eINSTANCE.getSourceReference_Default();
 
     /**
      * The meta object literal for the '{@link org.iobserve.rac.constraint.constraintLang.impl.LiteralImpl <em>Literal</em>}' class.

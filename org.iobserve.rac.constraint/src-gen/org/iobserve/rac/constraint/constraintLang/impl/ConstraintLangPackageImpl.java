@@ -37,6 +37,7 @@ import org.iobserve.rac.constraint.constraintLang.RecordTypeSelection;
 import org.iobserve.rac.constraint.constraintLang.SelectConstaintExpression;
 import org.iobserve.rac.constraint.constraintLang.SelectInput;
 import org.iobserve.rac.constraint.constraintLang.Selection;
+import org.iobserve.rac.constraint.constraintLang.SourceReference;
 import org.iobserve.rac.constraint.constraintLang.StringLiteral;
 import org.iobserve.rac.constraint.constraintLang.TemplateTypeSelection;
 import org.iobserve.rac.constraint.constraintLang.TypeSelection;
@@ -153,6 +154,13 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * @generated
    */
   private EClass recordTypeSelectionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass sourceReferenceEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -365,6 +373,26 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getOperation_Name()
+  {
+    return (EAttribute)operationEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getOperation_SourceReference()
+  {
+    return (EReference)operationEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getSelection()
   {
     return selectionEClass;
@@ -385,7 +413,7 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getSelection_Filter()
+  public EReference getSelection_RecordType()
   {
     return (EReference)selectionEClass.getEStructuralFeatures().get(1);
   }
@@ -395,19 +423,9 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getSelection_RecordType()
-  {
-    return (EReference)selectionEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getSelection_ParemterExpressions()
   {
-    return (EReference)selectionEClass.getEStructuralFeatures().get(3);
+    return (EReference)selectionEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -565,19 +583,9 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getFilter_Name()
-  {
-    return (EAttribute)filterEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getFilter_Constraint()
   {
-    return (EReference)filterEClass.getEStructuralFeatures().get(1);
+    return (EReference)filterEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -815,6 +823,36 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getSourceReference()
+  {
+    return sourceReferenceEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getSourceReference_Filter()
+  {
+    return (EReference)sourceReferenceEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getSourceReference_Default()
+  {
+    return (EAttribute)sourceReferenceEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getLiteral()
   {
     return literalEClass;
@@ -1009,10 +1047,11 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     createEAttribute(importEClass, IMPORT__IMPORTED_NAMESPACE);
 
     operationEClass = createEClass(OPERATION);
+    createEAttribute(operationEClass, OPERATION__NAME);
+    createEReference(operationEClass, OPERATION__SOURCE_REFERENCE);
 
     selectionEClass = createEClass(SELECTION);
     createEReference(selectionEClass, SELECTION__INPUTS);
-    createEReference(selectionEClass, SELECTION__FILTER);
     createEReference(selectionEClass, SELECTION__RECORD_TYPE);
     createEReference(selectionEClass, SELECTION__PAREMTER_EXPRESSIONS);
 
@@ -1035,7 +1074,6 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     createEReference(parameterExpressionEClass, PARAMETER_EXPRESSION__PROPERTY_REFERENCE);
 
     filterEClass = createEClass(FILTER);
-    createEAttribute(filterEClass, FILTER__NAME);
     createEReference(filterEClass, FILTER__CONSTRAINT);
 
     constraintExpressionEClass = createEClass(CONSTRAINT_EXPRESSION);
@@ -1066,6 +1104,10 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     recordTypeSelectionEClass = createEClass(RECORD_TYPE_SELECTION);
     createEAttribute(recordTypeSelectionEClass, RECORD_TYPE_SELECTION__MODIFIER);
     createEReference(recordTypeSelectionEClass, RECORD_TYPE_SELECTION__TYPE);
+
+    sourceReferenceEClass = createEClass(SOURCE_REFERENCE);
+    createEReference(sourceReferenceEClass, SOURCE_REFERENCE__FILTER);
+    createEAttribute(sourceReferenceEClass, SOURCE_REFERENCE__DEFAULT);
 
     literalEClass = createEClass(LITERAL);
 
@@ -1150,10 +1192,11 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     initEAttribute(getImport_ImportedNamespace(), theEcorePackage.getEString(), "importedNamespace", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(operationEClass, Operation.class, "Operation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getOperation_Name(), theEcorePackage.getEString(), "name", null, 0, 1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getOperation_SourceReference(), this.getSourceReference(), null, "sourceReference", null, 0, 1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(selectionEClass, Selection.class, "Selection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getSelection_Inputs(), this.getSelectInput(), null, "inputs", null, 0, -1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getSelection_Filter(), this.getFilter(), null, "filter", null, 0, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getSelection_RecordType(), theRecordLangPackage.getRecordType(), null, "recordType", null, 0, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getSelection_ParemterExpressions(), this.getParameterExpression(), null, "paremterExpressions", null, 0, -1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1176,7 +1219,6 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     initEReference(getParameterExpression_PropertyReference(), theRecordLangPackage.getProperty(), null, "propertyReference", null, 0, 1, ParameterExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(filterEClass, Filter.class, "Filter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getFilter_Name(), theEcorePackage.getEString(), "name", null, 0, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getFilter_Constraint(), this.getConstraintExpression(), null, "constraint", null, 0, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(constraintExpressionEClass, ConstraintExpression.class, "ConstraintExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1207,6 +1249,10 @@ public class ConstraintLangPackageImpl extends EPackageImpl implements Constrain
     initEClass(recordTypeSelectionEClass, RecordTypeSelection.class, "RecordTypeSelection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRecordTypeSelection_Modifier(), this.getRecordTypeModifier(), "modifier", null, 0, 1, RecordTypeSelection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRecordTypeSelection_Type(), theRecordLangPackage.getRecordType(), null, "type", null, 0, 1, RecordTypeSelection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(sourceReferenceEClass, SourceReference.class, "SourceReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getSourceReference_Filter(), this.getOperation(), null, "filter", null, 0, 1, SourceReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getSourceReference_Default(), theEcorePackage.getEBoolean(), "default", null, 0, 1, SourceReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(literalEClass, Literal.class, "Literal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -12,11 +12,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Import">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="importedNamespace" eType="ecore:EDataType platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Operation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceReference" eType="#//SourceReference"
+        containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Selection" eSuperTypes="#//Operation">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inputs" upperBound="-1"
         eType="#//SelectInput" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="#//Filter"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="recordType" eType="ecore:EClass platform:/resource/de.cau.cs.se.instrumentation.rl/model/generated/RecordLang.ecore#//RecordType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="paremterExpressions" upperBound="-1"
         eType="#//ParameterExpression" containment="true"/>
@@ -43,7 +46,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="propertyReference" eType="ecore:EClass platform:/resource/de.cau.cs.se.instrumentation.rl/model/generated/RecordLang.ecore#//Property"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Filter" eSuperTypes="#//Operation">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constraint" eType="#//ConstraintExpression"
         containment="true"/>
   </eClassifiers>
@@ -88,6 +90,10 @@
   <eClassifiers xsi:type="ecore:EEnum" name="RecordTypeModifier">
     <eLiterals name="SUPER" literal="super"/>
     <eLiterals name="EXTENDS" value="1" literal="extends"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceReference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="#//Operation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="default" eType="ecore:EDataType platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Literal" eSuperTypes="#//CompareOperand"/>
   <eClassifiers xsi:type="ecore:EClass" name="ArrayLiteral" eSuperTypes="#//Literal">

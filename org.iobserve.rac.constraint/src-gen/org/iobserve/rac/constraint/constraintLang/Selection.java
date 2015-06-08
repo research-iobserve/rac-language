@@ -15,7 +15,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.Selection#getInputs <em>Inputs</em>}</li>
- *   <li>{@link org.iobserve.rac.constraint.constraintLang.Selection#getFilter <em>Filter</em>}</li>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.Selection#getRecordType <em>Record Type</em>}</li>
  *   <li>{@link org.iobserve.rac.constraint.constraintLang.Selection#getParemterExpressions <em>Paremter Expressions</em>}</li>
  * </ul>
@@ -42,32 +41,6 @@ public interface Selection extends Operation
    * @generated
    */
   EList<SelectInput> getInputs();
-
-  /**
-   * Returns the value of the '<em><b>Filter</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Filter</em>' reference isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Filter</em>' reference.
-   * @see #setFilter(Filter)
-   * @see org.iobserve.rac.constraint.constraintLang.ConstraintLangPackage#getSelection_Filter()
-   * @model
-   * @generated
-   */
-  Filter getFilter();
-
-  /**
-   * Sets the value of the '{@link org.iobserve.rac.constraint.constraintLang.Selection#getFilter <em>Filter</em>}' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Filter</em>' reference.
-   * @see #getFilter()
-   * @generated
-   */
-  void setFilter(Filter value);
 
   /**
    * Returns the value of the '<em><b>Record Type</b></em>' reference.

@@ -50,6 +50,7 @@ public class InternalConstraintLangLexer extends Lexer {
     public static final int T__40=40;
     public static final int T__41=41;
     public static final int T__20=20;
+    public static final int T__42=42;
     public static final int T__21=21;
 
     // delegates
@@ -359,11 +360,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:25:7: ( 'from' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:25:9: 'from'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:25:7: ( ':' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:25:9: ':'
             {
-            match("from"); 
-
+            match(':'); 
 
             }
 
@@ -461,10 +461,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:30:7: ( ':' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:30:9: ':'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:30:7: ( '.' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:30:9: '.'
             {
-            match(':'); 
+            match('.'); 
 
             }
 
@@ -481,10 +481,11 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:31:7: ( '.' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:31:9: '.'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:31:7: ( 'filter' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:31:9: 'filter'
             {
-            match('.'); 
+            match("filter"); 
+
 
             }
 
@@ -501,11 +502,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:32:7: ( 'filter' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:32:9: 'filter'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:32:7: ( '?' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:32:9: '?'
             {
-            match("filter"); 
-
+            match('?'); 
 
             }
 
@@ -522,10 +522,11 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:33:7: ( '?' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:33:9: '?'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:33:7: ( 'uses' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:33:9: 'uses'
             {
-            match('?'); 
+            match("uses"); 
+
 
             }
 
@@ -542,10 +543,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:34:7: ( 'uses' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:34:9: 'uses'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:34:7: ( 'from' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:34:9: 'from'
             {
-            match("uses"); 
+            match("from"); 
 
 
             }
@@ -623,10 +624,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:38:7: ( 'KIEKER_VERSION' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:38:9: 'KIEKER_VERSION'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:38:7: ( 'default' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:38:9: 'default'
             {
-            match("KIEKER_VERSION"); 
+            match("default"); 
 
 
             }
@@ -639,11 +640,32 @@ public class InternalConstraintLangLexer extends Lexer {
     }
     // $ANTLR end "T__41"
 
+    // $ANTLR start "T__42"
+    public final void mT__42() throws RecognitionException {
+        try {
+            int _type = T__42;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:39:7: ( 'KIEKER_VERSION' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:39:9: 'KIEKER_VERSION'
+            {
+            match("KIEKER_VERSION"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__42"
+
     // $ANTLR start "RULE_NUMBER"
     public final void mRULE_NUMBER() throws RecognitionException {
         try {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5077:22: ( '0' .. '9' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5077:24: '0' .. '9'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5320:22: ( '0' .. '9' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5320:24: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -660,10 +682,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:10: ( ( '-' )? ( RULE_NUMBER )+ )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:12: ( '-' )? ( RULE_NUMBER )+
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:10: ( ( '-' )? ( RULE_NUMBER )+ )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:12: ( '-' )? ( RULE_NUMBER )+
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:12: ( '-' )?
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:12: ( '-' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -672,7 +694,7 @@ public class InternalConstraintLangLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:12: '-'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:12: '-'
                     {
                     match('-'); 
 
@@ -681,7 +703,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
             }
 
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:17: ( RULE_NUMBER )+
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:17: ( RULE_NUMBER )+
             int cnt2=0;
             loop2:
             do {
@@ -695,7 +717,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5079:17: RULE_NUMBER
+            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5322:17: RULE_NUMBER
             	    {
             	    mRULE_NUMBER(); 
 
@@ -727,17 +749,17 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_FLOAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:12: ( ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' ) )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:12: ( ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' ) )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )
             int alt12=2;
             alt12 = dfa12.predict(input);
             switch (alt12) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:15: ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:15: ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )?
                     {
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:15: ( '-' )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:15: ( '-' )?
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -746,7 +768,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:15: '-'
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:15: '-'
                             {
                             match('-'); 
 
@@ -755,7 +777,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                     }
 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:20: ( RULE_NUMBER )+
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:20: ( RULE_NUMBER )+
                     int cnt4=0;
                     loop4:
                     do {
@@ -769,7 +791,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:20: RULE_NUMBER
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:20: RULE_NUMBER
                     	    {
                     	    mRULE_NUMBER(); 
 
@@ -786,7 +808,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     } while (true);
 
                     match('.'); 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:37: ( RULE_NUMBER )*
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:37: ( RULE_NUMBER )*
                     loop5:
                     do {
                         int alt5=2;
@@ -799,7 +821,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:37: RULE_NUMBER
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:37: RULE_NUMBER
                     	    {
                     	    mRULE_NUMBER(); 
 
@@ -811,7 +833,7 @@ public class InternalConstraintLangLexer extends Lexer {
                         }
                     } while (true);
 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:50: ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:50: ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -820,7 +842,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     switch (alt8) {
                         case 1 :
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:51: ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:51: ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+
                             {
                             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                                 input.consume();
@@ -831,7 +853,7 @@ public class InternalConstraintLangLexer extends Lexer {
                                 recover(mse);
                                 throw mse;}
 
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:61: ( '+' | '-' )?
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:61: ( '+' | '-' )?
                             int alt6=2;
                             int LA6_0 = input.LA(1);
 
@@ -857,7 +879,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                             }
 
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:72: ( RULE_NUMBER )+
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:72: ( RULE_NUMBER )+
                             int cnt7=0;
                             loop7:
                             do {
@@ -871,7 +893,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                                 switch (alt7) {
                             	case 1 :
-                            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:72: RULE_NUMBER
+                            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:72: RULE_NUMBER
                             	    {
                             	    mRULE_NUMBER(); 
 
@@ -893,7 +915,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                     }
 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:87: ( 'f' )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:87: ( 'f' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -902,7 +924,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:87: 'f'
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:87: 'f'
                             {
                             match('f'); 
 
@@ -915,9 +937,9 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:92: ( '-' )? ( RULE_NUMBER )+ 'f'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:92: ( '-' )? ( RULE_NUMBER )+ 'f'
                     {
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:92: ( '-' )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:92: ( '-' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -926,7 +948,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:92: '-'
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:92: '-'
                             {
                             match('-'); 
 
@@ -935,7 +957,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                     }
 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:97: ( RULE_NUMBER )+
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:97: ( RULE_NUMBER )+
                     int cnt11=0;
                     loop11:
                     do {
@@ -949,7 +971,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5081:97: RULE_NUMBER
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5324:97: RULE_NUMBER
                     	    {
                     	    mRULE_NUMBER(); 
 
@@ -988,10 +1010,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_BOOLEAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5083:14: ( ( 'true' | 'false' ) )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5083:16: ( 'true' | 'false' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5326:14: ( ( 'true' | 'false' ) )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5326:16: ( 'true' | 'false' )
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5083:16: ( 'true' | 'false' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5326:16: ( 'true' | 'false' )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1009,7 +1031,7 @@ public class InternalConstraintLangLexer extends Lexer {
             }
             switch (alt13) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5083:17: 'true'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5326:17: 'true'
                     {
                     match("true"); 
 
@@ -1017,7 +1039,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5083:24: 'false'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5326:24: 'false'
                     {
                     match("false"); 
 
@@ -1043,10 +1065,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5085:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5085:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5328:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5328:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5085:11: ( '^' )?
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5328:11: ( '^' )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -1055,7 +1077,7 @@ public class InternalConstraintLangLexer extends Lexer {
             }
             switch (alt14) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5085:11: '^'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5328:11: '^'
                     {
                     match('^'); 
 
@@ -1073,7 +1095,7 @@ public class InternalConstraintLangLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5085:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5328:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop15:
             do {
                 int alt15=2;
@@ -1122,10 +1144,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -1143,10 +1165,10 @@ public class InternalConstraintLangLexer extends Lexer {
             }
             switch (alt18) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop16:
                     do {
                         int alt16=3;
@@ -1162,7 +1184,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         switch (alt16) {
                     	case 1 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:21: '\\\\' .
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1170,7 +1192,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1195,10 +1217,10 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop17:
                     do {
                         int alt17=3;
@@ -1214,7 +1236,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         switch (alt17) {
                     	case 1 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:54: '\\\\' .
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1222,7 +1244,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5087:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5330:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1265,12 +1287,12 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5089:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5089:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5332:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5332:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5089:24: ( options {greedy=false; } : . )*
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5332:24: ( options {greedy=false; } : . )*
             loop19:
             do {
                 int alt19=2;
@@ -1295,7 +1317,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                 switch (alt19) {
             	case 1 :
-            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5089:52: .
+            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5332:52: .
             	    {
             	    matchAny(); 
 
@@ -1325,12 +1347,12 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop20:
             do {
                 int alt20=2;
@@ -1343,7 +1365,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                 switch (alt20) {
             	case 1 :
-            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1363,7 +1385,7 @@ public class InternalConstraintLangLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:40: ( ( '\\r' )? '\\n' )?
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:40: ( ( '\\r' )? '\\n' )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -1372,9 +1394,9 @@ public class InternalConstraintLangLexer extends Lexer {
             }
             switch (alt22) {
                 case 1 :
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:41: ( '\\r' )? '\\n'
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:41: ( '\\r' )?
+                    // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:41: ( '\\r' )?
                     int alt21=2;
                     int LA21_0 = input.LA(1);
 
@@ -1383,7 +1405,7 @@ public class InternalConstraintLangLexer extends Lexer {
                     }
                     switch (alt21) {
                         case 1 :
-                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5091:41: '\\r'
+                            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5334:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1415,10 +1437,10 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5093:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5093:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5336:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5336:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5093:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5336:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt23=0;
             loop23:
             do {
@@ -1472,8 +1494,8 @@ public class InternalConstraintLangLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5095:16: ( . )
-            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5095:18: .
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5338:16: ( . )
+            // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:5338:18: .
             {
             matchAny(); 
 
@@ -1488,8 +1510,8 @@ public class InternalConstraintLangLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | RULE_INT | RULE_FLOAT | RULE_BOOLEAN | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt24=37;
+        // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:8: ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | RULE_INT | RULE_FLOAT | RULE_BOOLEAN | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt24=38;
         alt24 = dfa24.predict(input);
         switch (alt24) {
             case 1 :
@@ -1689,63 +1711,70 @@ public class InternalConstraintLangLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:178: RULE_INT
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:178: T__42
+                {
+                mT__42(); 
+
+                }
+                break;
+            case 30 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:184: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 30 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:187: RULE_FLOAT
+            case 31 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:193: RULE_FLOAT
                 {
                 mRULE_FLOAT(); 
 
                 }
                 break;
-            case 31 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:198: RULE_BOOLEAN
+            case 32 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:204: RULE_BOOLEAN
                 {
                 mRULE_BOOLEAN(); 
 
                 }
                 break;
-            case 32 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:211: RULE_ID
+            case 33 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:217: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 33 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:219: RULE_STRING
+            case 34 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:225: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 34 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:231: RULE_ML_COMMENT
+            case 35 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:237: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 35 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:247: RULE_SL_COMMENT
+            case 36 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:253: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 36 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:263: RULE_WS
+            case 37 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:269: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 37 :
-                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:271: RULE_ANY_OTHER
+            case 38 :
+                // ../org.iobserve.rac.constraint.ui/src-gen/org/iobserve/rac/constraint/ui/contentassist/antlr/internal/InternalConstraintLang.g:1:277: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1768,13 +1797,13 @@ public class InternalConstraintLangLexer extends Lexer {
     static final String DFA12_maxS =
         "\2\71\1\146\2\uffff";
     static final String DFA12_acceptS =
-        "\3\uffff\1\2\1\1";
+        "\3\uffff\1\1\1\2";
     static final String DFA12_specialS =
         "\5\uffff}>";
     static final String[] DFA12_transitionS = {
             "\1\1\2\uffff\12\2",
             "\12\2",
-            "\1\4\1\uffff\12\2\54\uffff\1\3",
+            "\1\3\1\uffff\12\2\54\uffff\1\4",
             "",
             ""
     };
@@ -1809,97 +1838,96 @@ public class InternalConstraintLangLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "5081:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )";
+            return "5324:14: ( ( '-' )? ( RULE_NUMBER )+ '.' ( RULE_NUMBER )* ( ( 'e' | 'E' ) ( '+' | '-' )? ( RULE_NUMBER )+ )? ( 'f' )? | ( '-' )? ( RULE_NUMBER )+ 'f' )";
         }
     }
     static final String DFA24_eotS =
-        "\1\uffff\2\45\2\uffff\2\41\1\54\1\56\1\uffff\3\45\6\uffff\1\45\3\uffff\1\45\1\41\1\101\1\45\1\41\1\uffff\3\41\2\uffff\3\45\1\uffff\1\45\11\uffff\5\45\6\uffff\1\45\3\uffff\1\45\1\101\2\uffff\1\45\4\uffff\22\45\1\146\2\45\1\151\1\45\1\153\1\154\1\45\1\156\3\45\1\uffff\1\45\1\153\1\uffff\1\45\2\uffff\1\164\1\uffff\2\45\1\167\1\170\1\45\1\uffff\1\172\1\173\2\uffff\1\45\2\uffff\6\45\1\u0083\1\uffff";
+        "\1\uffff\2\46\2\uffff\2\42\1\55\1\57\1\uffff\2\46\5\uffff\1\46\1\uffff\1\46\3\uffff\2\46\1\42\1\103\1\46\1\42\1\uffff\3\42\2\uffff\3\46\1\uffff\1\46\11\uffff\2\46\5\uffff\3\46\1\uffff\1\46\3\uffff\2\46\1\103\2\uffff\1\46\4\uffff\24\46\1\153\1\46\1\155\2\46\1\160\1\161\1\46\1\163\4\46\1\uffff\1\160\1\uffff\2\46\2\uffff\1\172\1\uffff\2\46\1\175\1\176\2\46\1\uffff\1\u0081\1\u0082\2\uffff\1\u0083\1\46\3\uffff\6\46\1\u008b\1\uffff";
     static final String DFA24_eofS =
-        "\u0084\uffff";
+        "\u008c\uffff";
     static final String DFA24_minS =
-        "\1\0\1\145\1\170\2\uffff\4\75\1\uffff\1\141\1\155\1\141\6\uffff\1\163\3\uffff\1\111\1\60\1\56\1\162\1\101\1\uffff\2\0\1\52\2\uffff\1\160\1\154\1\157\1\uffff\1\164\11\uffff\1\143\1\160\1\157\2\154\6\uffff\1\145\3\uffff\1\105\1\56\2\uffff\1\165\4\uffff\2\145\1\162\1\145\1\153\1\157\1\155\1\164\2\163\1\113\1\145\1\162\1\143\1\145\1\156\1\141\1\162\1\60\2\145\1\60\1\105\2\60\1\164\1\60\1\144\1\147\1\164\1\uffff\1\162\1\60\1\uffff\1\122\2\uffff\1\60\1\uffff\1\163\1\145\2\60\1\137\1\uffff\2\60\2\uffff\1\126\2\uffff\1\105\1\122\1\123\1\111\1\117\1\116\1\60\1\uffff";
+        "\1\0\1\145\1\170\2\uffff\4\75\1\uffff\1\141\1\155\5\uffff\1\141\1\uffff\1\163\3\uffff\1\145\1\111\1\60\1\56\1\162\1\101\1\uffff\2\0\1\52\2\uffff\1\160\1\154\1\157\1\uffff\1\164\11\uffff\1\143\1\160\5\uffff\1\154\1\157\1\154\1\uffff\1\145\3\uffff\1\146\1\105\1\56\2\uffff\1\165\4\uffff\2\145\1\162\1\145\1\153\1\157\1\164\1\155\2\163\1\141\1\113\1\145\1\162\1\143\1\145\1\156\1\141\1\162\1\145\1\60\1\145\1\60\1\165\1\105\2\60\1\164\1\60\1\144\1\147\1\164\1\162\1\uffff\1\60\1\uffff\1\154\1\122\2\uffff\1\60\1\uffff\1\163\1\145\2\60\1\164\1\137\1\uffff\2\60\2\uffff\1\60\1\126\3\uffff\1\105\1\122\1\123\1\111\1\117\1\116\1\60\1\uffff";
     static final String DFA24_maxS =
-        "\1\uffff\1\165\1\170\2\uffff\4\75\1\uffff\1\141\1\155\1\162\6\uffff\1\163\3\uffff\1\111\1\71\1\146\1\162\1\172\1\uffff\2\uffff\1\57\2\uffff\1\160\1\154\1\157\1\uffff\1\164\11\uffff\1\143\1\160\1\157\2\154\6\uffff\1\145\3\uffff\1\105\1\146\2\uffff\1\165\4\uffff\2\145\1\162\1\145\1\153\1\157\1\155\1\164\2\163\1\113\1\145\1\162\1\143\1\145\1\156\1\141\1\162\1\172\2\145\1\172\1\105\2\172\1\164\1\172\1\144\1\147\1\164\1\uffff\1\162\1\172\1\uffff\1\122\2\uffff\1\172\1\uffff\1\163\1\145\2\172\1\137\1\uffff\2\172\2\uffff\1\126\2\uffff\1\105\1\122\1\123\1\111\1\117\1\116\1\172\1\uffff";
+        "\1\uffff\1\165\1\170\2\uffff\4\75\1\uffff\1\141\1\155\5\uffff\1\162\1\uffff\1\163\3\uffff\1\145\1\111\1\71\1\146\1\162\1\172\1\uffff\2\uffff\1\57\2\uffff\1\160\1\154\1\157\1\uffff\1\164\11\uffff\1\143\1\160\5\uffff\1\154\1\157\1\154\1\uffff\1\145\3\uffff\1\146\1\105\1\146\2\uffff\1\165\4\uffff\2\145\1\162\1\145\1\153\1\157\1\164\1\155\2\163\1\141\1\113\1\145\1\162\1\143\1\145\1\156\1\141\1\162\1\145\1\172\1\145\1\172\1\165\1\105\2\172\1\164\1\172\1\144\1\147\1\164\1\162\1\uffff\1\172\1\uffff\1\154\1\122\2\uffff\1\172\1\uffff\1\163\1\145\2\172\1\164\1\137\1\uffff\2\172\2\uffff\1\172\1\126\3\uffff\1\105\1\122\1\123\1\111\1\117\1\116\1\172\1\uffff";
     static final String DFA24_acceptS =
-        "\3\uffff\1\3\1\4\4\uffff\1\13\3\uffff\1\21\1\22\1\23\1\24\1\25\1\27\1\uffff\1\31\1\32\1\33\5\uffff\1\40\3\uffff\1\44\1\45\3\uffff\1\40\1\uffff\1\3\1\4\1\5\1\6\1\11\1\7\1\12\1\10\1\13\5\uffff\1\21\1\22\1\23\1\24\1\25\1\27\1\uffff\1\31\1\32\1\33\2\uffff\1\35\1\36\1\uffff\1\41\1\42\1\43\1\44\36\uffff\1\17\2\uffff\1\30\1\uffff\1\37\1\1\1\uffff\1\20\5\uffff\1\16\2\uffff\1\15\1\26\1\uffff\1\2\1\14\7\uffff\1\34";
+        "\3\uffff\1\3\1\4\4\uffff\1\13\2\uffff\1\17\1\21\1\22\1\23\1\24\1\uffff\1\26\1\uffff\1\31\1\32\1\33\6\uffff\1\41\3\uffff\1\45\1\46\3\uffff\1\41\1\uffff\1\3\1\4\1\5\1\6\1\11\1\7\1\12\1\10\1\13\2\uffff\1\17\1\21\1\22\1\23\1\24\3\uffff\1\26\1\uffff\1\31\1\32\1\33\3\uffff\1\36\1\37\1\uffff\1\42\1\43\1\44\1\45\41\uffff\1\30\1\uffff\1\27\2\uffff\1\40\1\1\1\uffff\1\20\6\uffff\1\16\2\uffff\1\15\1\25\2\uffff\1\2\1\14\1\34\7\uffff\1\35";
     static final String DFA24_specialS =
-        "\1\0\34\uffff\1\2\1\1\145\uffff}>";
+        "\1\2\35\uffff\1\1\1\0\154\uffff}>";
     static final String[] DFA24_transitionS = {
-            "\11\41\2\40\2\41\1\40\22\41\1\40\1\6\1\35\3\41\1\3\1\36\1\15\1\16\1\26\1\41\1\17\1\30\1\21\1\37\12\31\1\20\1\41\1\10\1\5\1\7\1\22\1\41\12\34\1\27\17\34\3\41\1\33\1\34\1\41\4\34\1\2\1\14\2\34\1\13\6\34\1\12\2\34\1\1\1\32\1\23\5\34\1\24\1\4\1\25\1\11\uff81\41",
-            "\1\43\16\uffff\1\44\1\42",
-            "\1\46",
+            "\11\42\2\41\2\42\1\41\22\42\1\41\1\6\1\36\3\42\1\3\1\37\1\15\1\16\1\26\1\42\1\17\1\31\1\20\1\40\12\32\1\14\1\42\1\10\1\5\1\7\1\22\1\42\12\35\1\30\17\35\3\42\1\34\1\35\1\42\3\35\1\27\1\2\1\21\2\35\1\13\6\35\1\12\2\35\1\1\1\33\1\23\5\35\1\24\1\4\1\25\1\11\uff81\42",
+            "\1\44\16\uffff\1\45\1\43",
+            "\1\47",
             "",
             "",
-            "\1\51",
             "\1\52",
             "\1\53",
-            "\1\55",
+            "\1\54",
+            "\1\56",
             "",
-            "\1\60",
             "\1\61",
-            "\1\64\7\uffff\1\63\10\uffff\1\62",
+            "\1\62",
             "",
             "",
             "",
             "",
             "",
+            "\1\72\7\uffff\1\70\10\uffff\1\71",
             "",
-            "\1\73",
-            "",
-            "",
-            "",
-            "\1\77",
-            "\12\100",
-            "\1\102\1\uffff\12\100\54\uffff\1\102",
-            "\1\103",
-            "\32\45\4\uffff\1\45\1\uffff\32\45",
-            "",
-            "\0\104",
-            "\0\104",
-            "\1\105\4\uffff\1\106",
+            "\1\74",
             "",
             "",
-            "\1\110",
-            "\1\111",
+            "",
+            "\1\100",
+            "\1\101",
+            "\12\102",
+            "\1\104\1\uffff\12\102\54\uffff\1\104",
+            "\1\105",
+            "\32\46\4\uffff\1\46\1\uffff\32\46",
+            "",
+            "\0\106",
+            "\0\106",
+            "\1\107\4\uffff\1\110",
+            "",
+            "",
             "\1\112",
-            "",
             "\1\113",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\114",
+            "",
             "\1\115",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\116",
             "\1\117",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\120",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\121",
-            "",
-            "",
-            "",
             "\1\122",
-            "\1\102\1\uffff\12\100\54\uffff\1\102",
-            "",
             "",
             "\1\123",
             "",
             "",
             "",
-            "",
             "\1\124",
             "\1\125",
+            "\1\104\1\uffff\12\102\54\uffff\1\104",
+            "",
+            "",
             "\1\126",
+            "",
+            "",
+            "",
+            "",
             "\1\127",
             "\1\130",
             "\1\131",
@@ -1915,47 +1943,56 @@ public class InternalConstraintLangLexer extends Lexer {
             "\1\143",
             "\1\144",
             "\1\145",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
+            "\1\146",
             "\1\147",
             "\1\150",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
+            "\1\151",
             "\1\152",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "\1\155",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\1\154",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\1\156",
             "\1\157",
-            "\1\160",
-            "\1\161",
-            "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
             "\1\162",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "",
-            "\1\163",
-            "",
-            "",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\1\164",
             "\1\165",
             "\1\166",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
+            "\1\167",
+            "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "",
+            "\1\170",
             "\1\171",
             "",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
             "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
             "",
+            "\1\173",
             "\1\174",
-            "",
-            "",
-            "\1\175",
-            "\1\176",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
             "\1\177",
             "\1\u0080",
-            "\1\u0081",
-            "\1\u0082",
-            "\12\45\7\uffff\32\45\4\uffff\1\45\1\uffff\32\45",
+            "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "",
+            "",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
+            "\1\u0084",
+            "",
+            "",
+            "",
+            "\1\u0085",
+            "\1\u0086",
+            "\1\u0087",
+            "\1\u0088",
+            "\1\u0089",
+            "\1\u008a",
+            "\12\46\7\uffff\32\46\4\uffff\1\46\1\uffff\32\46",
             ""
     };
 
@@ -1989,13 +2026,33 @@ public class InternalConstraintLangLexer extends Lexer {
             this.transition = DFA24_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | RULE_INT | RULE_FLOAT | RULE_BOOLEAN | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | RULE_INT | RULE_FLOAT | RULE_BOOLEAN | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA24_31 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA24_31>='\u0000' && LA24_31<='\uFFFF')) ) {s = 70;}
+
+                        else s = 34;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA24_30 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA24_30>='\u0000' && LA24_30<='\uFFFF')) ) {s = 70;}
+
+                        else s = 34;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
                         int LA24_0 = input.LA(1);
 
                         s = -1;
@@ -2021,7 +2078,7 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         else if ( (LA24_0=='i') ) {s = 11;}
 
-                        else if ( (LA24_0=='f') ) {s = 12;}
+                        else if ( (LA24_0==':') ) {s = 12;}
 
                         else if ( (LA24_0=='(') ) {s = 13;}
 
@@ -2029,9 +2086,9 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         else if ( (LA24_0==',') ) {s = 15;}
 
-                        else if ( (LA24_0==':') ) {s = 16;}
+                        else if ( (LA24_0=='.') ) {s = 16;}
 
-                        else if ( (LA24_0=='.') ) {s = 17;}
+                        else if ( (LA24_0=='f') ) {s = 17;}
 
                         else if ( (LA24_0=='?') ) {s = 18;}
 
@@ -2043,47 +2100,29 @@ public class InternalConstraintLangLexer extends Lexer {
 
                         else if ( (LA24_0=='*') ) {s = 22;}
 
-                        else if ( (LA24_0=='K') ) {s = 23;}
+                        else if ( (LA24_0=='d') ) {s = 23;}
 
-                        else if ( (LA24_0=='-') ) {s = 24;}
+                        else if ( (LA24_0=='K') ) {s = 24;}
 
-                        else if ( ((LA24_0>='0' && LA24_0<='9')) ) {s = 25;}
+                        else if ( (LA24_0=='-') ) {s = 25;}
 
-                        else if ( (LA24_0=='t') ) {s = 26;}
+                        else if ( ((LA24_0>='0' && LA24_0<='9')) ) {s = 26;}
 
-                        else if ( (LA24_0=='^') ) {s = 27;}
+                        else if ( (LA24_0=='t') ) {s = 27;}
 
-                        else if ( ((LA24_0>='A' && LA24_0<='J')||(LA24_0>='L' && LA24_0<='Z')||LA24_0=='_'||(LA24_0>='a' && LA24_0<='d')||(LA24_0>='g' && LA24_0<='h')||(LA24_0>='j' && LA24_0<='o')||(LA24_0>='q' && LA24_0<='r')||(LA24_0>='v' && LA24_0<='z')) ) {s = 28;}
+                        else if ( (LA24_0=='^') ) {s = 28;}
 
-                        else if ( (LA24_0=='\"') ) {s = 29;}
+                        else if ( ((LA24_0>='A' && LA24_0<='J')||(LA24_0>='L' && LA24_0<='Z')||LA24_0=='_'||(LA24_0>='a' && LA24_0<='c')||(LA24_0>='g' && LA24_0<='h')||(LA24_0>='j' && LA24_0<='o')||(LA24_0>='q' && LA24_0<='r')||(LA24_0>='v' && LA24_0<='z')) ) {s = 29;}
 
-                        else if ( (LA24_0=='\'') ) {s = 30;}
+                        else if ( (LA24_0=='\"') ) {s = 30;}
 
-                        else if ( (LA24_0=='/') ) {s = 31;}
+                        else if ( (LA24_0=='\'') ) {s = 31;}
 
-                        else if ( ((LA24_0>='\t' && LA24_0<='\n')||LA24_0=='\r'||LA24_0==' ') ) {s = 32;}
+                        else if ( (LA24_0=='/') ) {s = 32;}
 
-                        else if ( ((LA24_0>='\u0000' && LA24_0<='\b')||(LA24_0>='\u000B' && LA24_0<='\f')||(LA24_0>='\u000E' && LA24_0<='\u001F')||(LA24_0>='#' && LA24_0<='%')||LA24_0=='+'||LA24_0==';'||LA24_0=='@'||(LA24_0>='[' && LA24_0<=']')||LA24_0=='`'||(LA24_0>='\u007F' && LA24_0<='\uFFFF')) ) {s = 33;}
+                        else if ( ((LA24_0>='\t' && LA24_0<='\n')||LA24_0=='\r'||LA24_0==' ') ) {s = 33;}
 
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA24_30 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA24_30>='\u0000' && LA24_30<='\uFFFF')) ) {s = 68;}
-
-                        else s = 33;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA24_29 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA24_29>='\u0000' && LA24_29<='\uFFFF')) ) {s = 68;}
-
-                        else s = 33;
+                        else if ( ((LA24_0>='\u0000' && LA24_0<='\b')||(LA24_0>='\u000B' && LA24_0<='\f')||(LA24_0>='\u000E' && LA24_0<='\u001F')||(LA24_0>='#' && LA24_0<='%')||LA24_0=='+'||LA24_0==';'||LA24_0=='@'||(LA24_0>='[' && LA24_0<=']')||LA24_0=='`'||(LA24_0>='\u007F' && LA24_0<='\uFFFF')) ) {s = 34;}
 
                         if ( s>=0 ) return s;
                         break;

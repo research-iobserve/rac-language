@@ -158,6 +158,15 @@ public interface ConstraintLangFactory extends EFactory
   RecordTypeSelection createRecordTypeSelection();
 
   /**
+   * Returns a new object of class '<em>Source Reference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Source Reference</em>'.
+   * @generated
+   */
+  SourceReference createSourceReference();
+
+  /**
    * Returns a new object of class '<em>Literal</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

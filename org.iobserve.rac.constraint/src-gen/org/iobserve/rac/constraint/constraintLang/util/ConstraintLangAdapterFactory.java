@@ -150,6 +150,11 @@ public class ConstraintLangAdapterFactory extends AdapterFactoryImpl
         return createRecordTypeSelectionAdapter();
       }
       @Override
+      public Adapter caseSourceReference(SourceReference object)
+      {
+        return createSourceReferenceAdapter();
+      }
+      @Override
       public Adapter caseLiteral(Literal object)
       {
         return createLiteralAdapter();
@@ -427,6 +432,21 @@ public class ConstraintLangAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createRecordTypeSelectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.iobserve.rac.constraint.constraintLang.SourceReference <em>Source Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.iobserve.rac.constraint.constraintLang.SourceReference
+   * @generated
+   */
+  public Adapter createSourceReferenceAdapter()
   {
     return null;
   }
