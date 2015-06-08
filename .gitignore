@@ -1,3 +1,5 @@
 **/bin/**
 **.class
+**/*trace
+org.iobserve.rac.constraint/.antlr-generator-3.2.0-patch.jar
 
