@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.iobserve.rac.constraint/src-gen" editDirectory="/org.iobserve.rac.constraint.edit/src"
+    editorDirectory="/org.iobserve.rac.constraint.editor/src" modelPluginID="org.iobserve.rac.constraint"
+    forceOverwrite="true" modelName="ConstraintLang" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.iobserve.rac.constraint.edit"
+    editorPluginID="org.iobserve.rac.constraint.editor" runtimeVersion="2.10" usedGenPackages="platform:/resource/de.cau.cs.se.instrumentation.rl/model/generated/RecordLang.genmodel#//recordLang platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <genPackages prefix="ConstraintLang" basePackage="org.iobserve.rac.constraint" disposableProviderFactory="true"
+      fileExtensions="rac" ecorePackage="ConstraintLang.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ConstraintLang.ecore#//RecordTypeModifier">
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//RecordTypeModifier/SUPER"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//RecordTypeModifier/EXTENDS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ConstraintLang.ecore#//LogicOperator">
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//LogicOperator/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//LogicOperator/OR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ConstraintLang.ecore#//Comparator">
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/EQ"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/NE"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/GR"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/LW"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/GE"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/LE"/>
+      <genEnumLiterals ecoreEnumLiteral="ConstraintLang.ecore#//Comparator/LIKE"/>
+    </genEnums>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Model/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Model/operations"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//Import/importedNamespace"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Operation"/>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Selection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Selection/inputs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Selection/filter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Selection/recordType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Selection/paremterExpressions"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//SelectInput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//SelectInput/recordType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//SelectInput/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//SelectInput/selectConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//SelectConstaintExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//SelectConstaintExpression/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//SelectConstaintExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//SelectConstaintExpression/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//SelectConstaintExpression/constraint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//SelectConstaintExpression/comperator"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//CompareOperand"/>
+    <genClasses ecoreClass="ConstraintLang.ecore#//ParameterExpression">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ParameterExpression/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ParameterExpression/propertyReference"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Filter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//Filter/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//Filter/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//ConstraintExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConstraintExpression/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//ConstraintExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConstraintExpression/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConstraintExpression/constraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConstraintExpression/typeSelection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConstraintExpression/propertyConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//PropertyConstraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//PropertyConstraint/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//PropertyConstraint/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//PropertyConstraint/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//PropertyConstraint/constraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//PropertyConstraint/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//PropertyConstraint/comparator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//PropertyConstraint/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//TypeSelection"/>
+    <genClasses ecoreClass="ConstraintLang.ecore#//ConcreteType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ConcreteType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//TemplateTypeSelection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//TemplateTypeSelection/types"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//RecordTypeSelection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//RecordTypeSelection/modifier"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//RecordTypeSelection/type"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//Literal"/>
+    <genClasses ecoreClass="ConstraintLang.ecore#//ArrayLiteral">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConstraintLang.ecore#//ArrayLiteral/literals"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//StringLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//StringLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//IntLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//IntLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//FloatLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//FloatLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//BooleanLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//BooleanLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ConstraintLang.ecore#//BuiltInValueLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConstraintLang.ecore#//BuiltInValueLiteral/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

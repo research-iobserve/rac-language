@@ -1,0 +1,191 @@
+grammar org.iobserve.rac.constraint.ConstraintLang with org.eclipse.xtext.common.Terminals
+
+generate constraintLang "http://www.iobserve.org/rac/constraint/ConstraintLang"
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+import "http://www.cau.de/cs/se/instrumentation/rl/RecordLang" as record
+
+Model:
+	'package' name = QualifiedName
+	(imports += Import)*
+	(operations += Operation)*
+;
+
+Import:
+	'import' importedNamespace = QualifiedNameWithWildcard
+;
+
+// -----------------------------------
+// filter, selection and composition
+Operation:
+	Filter | Selection
+;
+
+// ---------------------
+// selection
+Selection:
+	'select' inputs+=SelectInput (',' inputs+=SelectInput)*
+	'from' filter=[Filter|ID]
+	'store' recordType=[record::RecordType|ID] 
+	'(' paremterExpressions+=ParameterExpression (',' paremterExpressions+=ParameterExpression)*  ')'
+;
+
+SelectInput:
+	recordType=[record::RecordType|ID] name=ID (':' selectConstraint=SelectConstaintExpression)?
+;
+
+SelectConstaintExpression:
+	BasicSelectConstraint (=>({SelectConstaintExpression.left=current} operator=LogicOperator) right=SelectConstaintExpression)?
+;
+
+BasicSelectConstraint returns SelectConstaintExpression:
+	ParenthesisSelectConstraint |
+	SelectConstraint
+;
+
+ParenthesisSelectConstraint returns SelectConstaintExpression:
+	'(' constraint=SelectConstaintExpression ')'
+;
+
+SelectConstraint returns SelectConstaintExpression:
+	left=CompareOperand comperator=Comparator right=CompareOperand
+;
+
+CompareOperand:
+	ParameterExpression | Literal
+;
+
+ParameterExpression:
+	(input=[SelectInput|ID] '.')? propertyReference=[record::Property|ID]
+;
+
+// ------------------------
+// filter
+Filter: 'filter' name=ID constraint=ConstraintExpression ;
+
+ConstraintExpression:
+	BasicConstraint (=>({ConstraintExpression.left=current} operator=LogicOperator) right=PropertyConstraint)?
+;
+
+BasicConstraint returns ConstraintExpression:
+	ParenthesisConstraint |
+	Constraint
+;
+
+ParenthesisConstraint returns ConstraintExpression:
+	'(' constraint=ConstraintExpression ')'
+;
+
+Constraint returns ConstraintExpression:
+	typeSelection=TypeSelection
+	propertyConstraint=PropertyConstraint?
+;
+
+PropertyConstraint:
+	BasicPropertyConstraint (=>({PropertyConstraint.left=current} operator=LogicOperator) right=PropertyConstraint)?
+;
+
+BasicPropertyConstraint returns PropertyConstraint:
+	PropertyParenthesisConstraint |
+	PropertyValueConstraint
+;
+
+PropertyParenthesisConstraint returns PropertyConstraint:
+	'(' constraint=PropertyConstraint ')'
+;
+
+PropertyValueConstraint returns PropertyConstraint:
+	property=[record::Property|ID] comparator=Comparator value=Literal
+;
+
+TypeSelection:
+	ConcreteType | TemplateTypeSelection | RecordTypeSelection   
+;
+
+ConcreteType: type=[record::Type|ID];
+
+TemplateTypeSelection:
+	'?' 'uses' types+=[record::TemplateType|ID] (',' types+=[record::TemplateType|QualifiedName])*
+;
+
+RecordTypeSelection:
+	'?' modifier=RecordTypeModifier type=[record::RecordType|ID]
+;
+
+enum RecordTypeModifier:
+	SUPER = 'super' |
+	EXTENDS = 'extends'
+;
+
+// -----------------------------------
+// Literal
+
+Literal:
+	StringLiteral | IntLiteral | FloatLiteral | BooleanLiteral | ArrayLiteral | BuiltInValueLiteral
+;
+
+ArrayLiteral:
+	'{' literals+=Literal (',' literals+=Literal)* '}'
+;
+
+StringLiteral:
+	value=STRING
+;
+
+IntLiteral:
+	value=INT
+;
+
+FloatLiteral:
+	value=FLOAT
+;
+
+BooleanLiteral: 
+	value=BOOLEAN
+;
+
+BuiltInValueLiteral: {BuiltInValueLiteral}
+	value='KIEKER_VERSION'
+;
+
+// -----------------------------------
+// Terminals
+
+enum LogicOperator:
+	AND = '&' |
+	OR = '|'
+;
+
+enum Comparator:
+	EQ = '==' |
+	NE = '!=' |
+	GR = '>' |
+	LW = '<' |
+	GE = '>=' |
+	LE = '<=' |
+	LIKE = '~'
+;
+
+QualifiedName:
+  ID (=>'.' ID)*;
+
+QualifiedNameWithWildcard:
+	QualifiedName ('.' '*')?
+;
+
+// terminals
+terminal fragment NUMBER :
+    '0'..'9';
+   
+// redefine INT terminal to allow negative numbers
+terminal INT returns ecore::EInt:
+    '-'? NUMBER+;
+
+// make sure the Float rule does not shadow the INT rule
+terminal FLOAT returns ecore::EFloatObject :
+    '-'? NUMBER+ ('.' NUMBER*) (("e"|"E") ("+"|"-")? NUMBER+)? 'f'? |
+    '-'? NUMBER+ 'f';
+    
+// introduce boolean values
+terminal BOOLEAN returns ecore::EBooleanObject :
+    'true' | 'false';
