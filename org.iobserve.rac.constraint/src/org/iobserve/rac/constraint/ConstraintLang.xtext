@@ -18,7 +18,7 @@ Import:
 // -----------------------------------
 // filter, selection and composition
 Operation:
-	Filter | Selection
+	Filter | Selection 
 ;
 
 // ---------------------
